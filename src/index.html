@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+     <meta charset="UTF-8" />
+     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+     <link rel="icon" href="images/logo/icon.png" />
+     <title>iNFINY</title>
+
+     <!-- FONT AWESOME -->
+     <script src="https://kit.fontawesome.com/272eed3989.js" crossorigin="anonymous"></script>
+     <!-- GOOGLE FONTS -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+     <!-- TAILWINDCSS -->
+     <link href="/dist/output.css" rel="stylesheet">
+</head>
+
+<body>
+     <header class="shadow-lg fixed z-50 w-full bg-white">
+          <div class="container">
+               <div class="flex flex-wrap items-center">
+                    <div class="top-header text-center md:w-full w-3/12">
+                         <a class="header-logo w-full md:w-44 pt-6 pb-4"><img src="images/logo/iNFINY-b.png" alt=""></a>
+                    </div>
+                    <div class="nav md:block hidden md:w-full w-9/12 justify-end">
+                         <ul class="flex justify-center">
+                              <li><a href="" class="nav-item">home</a></li>
+                              <li><a href="" class="nav-item">t-shirt</a></li>
+                              <li><a href="" class="nav-item">about us</a></li>
+                              <li><a href="" class="nav-item">contact us</a></li>
+                         </ul>
+                    </div>
+                    <div class="nav-btn w-9/12 md:hidden flex items-center justify-end">
+                         <button onclick="menuToggler()" class="text-neutral-800 text-3xl"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                    </div>
+                    <div class="small-menu opacity-0">
+                         <ul class="relative">
+                              <li><button onclick="menuToggler()" class="absolute top-2 right-2 text-neutral-800 text-3xl"><i class="fa-solid fa-xmark"></i></button></li>
+                              <li class="pt-5 pb-3 text-center border-b border-gray-300 "><a class="w-24" href=""><img src="images/logo/iNFINY-b.png" alt=""></a></li>
+                              <li><a class="nav-item" href="">home</a></li>
+                              <li><a class="nav-item" href="">t-shirt</a></li>
+                              <li><a class="nav-item" href="">about us</a></li>
+                              <li><a class="nav-item" href="">contact us</a></li>
+                         </ul>
+                    </div>
+               </div>
+          </div>
+     </header>
+
+     <main class="pt-80">
+     </main>
+
+     <footer class="bg-zinc-100">
+          <div class="md:pt-14 md:pb-20 py-10">
+               <div class="container text-center">
+                    <div class="mb-6 md:w-40 w-32 mx-auto"><a href=""><img src="images/logo/iNFINY-b.png" alt="logo"></a></div>
+                    <div class="footer-menu">
+                         <ul class="flex justify-center">
+                              <li><a class="nav-item" href="">home</a></li>
+                              <li><a class="nav-item" href="">t-shirt</a></li>
+                              <li><a class="nav-item" href="">about us</a></li>
+                              <li><a class="nav-item" href="">contact us</a></li>
+                         </ul>
+                    </div>
+                    <div class="contact-menu">
+                         <ul class="lg:flex lg:justify-center">
+                              <li><a class="footer-item  lg:border-r-2 lg:border-gray-500" href="">+880 13 1678 9454</a></li>
+                              <li><a class="footer-item  lg:border-r-2 lg:border-gray-500" href="">Shantibag R/A, Rampura-4224, Halishahar, Chattogram</a></li>
+                              <li><a class="footer-item" href="">infiny.grp@gmail.com</a></li>
+                         </ul>
+                    </div>
+               </div>
+          </div>
+          <div class="flex flex-wrap items-center border-t border-gray-300 md:py-7 pt-4 pb-0">
+               <div class="w-3/6 md:w-2/6 order-1">
+                    <ul class="flex md:justify-start justify-center">
+                         <li><a class="footer-social" href=""><i class="fa-brands fa-facebook-f"></i></a></li>
+                         <li><a class="footer-social" href=""><i class="fa-brands fa-instagram"></i></a></li>
+                         <li><a class="footer-social" href=""><i class="fa-brands fa-twitter"></i></a></li>
+                         <li><a class="footer-social" href=""><i class="fa-brands fa-facebook-messenger"></i></a></li>
+                    </ul>
+               </div>
+               <div class="w-full md:w-2/6 text-center md:order-2 order-3">
+                    <p class="pt-4 pb-2">Copyright &COPY; 2022 iNFINY</p>
+               </div>
+               <div class="w-3/6 md:w-2/6 md:order-3 order-2">
+                    <ul class="flex md:justify-end justify-center">
+                         <li><a class="footer-social" href=""><img src="images/payment/bkash.png" alt=""></a></li>
+                         <li><a class="footer-social" href=""><img src="images/payment/nogod.png" alt=""></a></li>
+                         <li><a class="footer-social" href=""><img src="images/payment/rocket.png" alt=""></a></li>
+                    </ul>
+               </div>
+          </div>
+     </footer>
+     <!-- SCRIPT -->
+     <script src="js/app.js"></script>
+</body>
+
+</html>

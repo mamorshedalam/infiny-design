@@ -1,3 +1,36 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .container {
+    @apply w-full sm:w-[540px] md:w-[720px] lg:w-[960px] xl:w-[1140px] px-4 mx-auto;
+  }
+  .nav-item{
+    @apply uppercase font-medium mx-2 py-3 md:mx-4 md:py-5 text-neutral-800 hover:text-red-600 hover:transition-colors hover:duration-500;
+  }
+  .footer-item{
+    @apply uppercase font-medium p-1 md:px-4 text-gray-500 hover:text-black hover:transition-colors hover:duration-500;
+  }
+  .footer-social{
+    @apply md:w-10 md:h-10 w-8 h-8 p-2 md:mx-2 mx-1 md:text-xl text-lg flex justify-center items-center rounded-full bg-stone-300 text-neutral-800 hover:bg-neutral-800 hover:text-stone-300 transition duration-500;
+  }
+  .small-menu{
+    @apply absolute w-0 top-0 left-0 z-50 bg-white shadow-lg transition-all duration-700;
+  }
+}
+
+@layer base {
+  a {
+    @apply inline-block;
+  }
+  body {
+    @apply inter-family text-sm;
+  }
+}
+
+@layer utilities {
+  .inter-family {
+    font-family: "Inter", sans-serif;
+  }
+}
