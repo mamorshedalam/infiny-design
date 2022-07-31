@@ -34,7 +34,7 @@
                          </ul>
                     </div>
                     <div class="nav-btn w-9/12 md:hidden flex items-center justify-end">
-                         <button onclick="menuToggler()" class="text-neutral-800 text-3xl"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                         <button onclick="menuToggler()" class="text-3xl"><i class="fa-solid fa-ellipsis-vertical"></i></button>
                     </div>
                     <div class="small-menu opacity-0">
                          <ul class="relative">
@@ -50,10 +50,261 @@
           </div>
      </header>
 
-     <main class="pt-80">
+     <main class="lg:pt-40 pt-20">
+          <section class="review pb-32 hidden">
+               <div class="container">
+                    <div class="flex justify-center items-center">
+                         <div class="w-80 px-4 py-8 rounded-xl border-2 border-rose-500 bg-white shadow-xl text-center">
+                              <div class="w-1/2 mx-auto mb-4"><img src="images/icon/scuccess.png" alt="success" /></div>
+                              <h2 class="mb-2 text-3xl uppercase font-bold text-rose-600">thank you!</h2>
+                              <p class="capitalize">we've received your submission, <br />it will help us to build your startup</p>
+                              <button class="btn">keep connected with iNFINY</button>
+                         </div>
+                    </div>
+               </div>
+          </section>
+          <section class="review pb-32 hidden">
+               <div class="container">
+                    <form action="">
+                         <div class="grid md:grid-cols-2 grid-cols-1 gap-4">
+                              <div class="rounded-xl border border-gray-500 shadow-lg">
+                                   <img class="rounded-tl-xl rounded-tr-xl" src="images/item/image1.jpeg" alt="">
+                                   <div class="flex justify-between items-center">
+                                        <label class="p-2">Please, review it between 1 to 10. Where 1 is min & 10 is max</label>
+                                        <select class="p-2 rounded-br-xl border-l border-gray-300">
+                                             <option value={1}>1</option>
+                                             <option value={2}>2</option>
+                                             <option value={3}>3</option>
+                                             <option value={4}>4</option>
+                                             <option value={5}>5</option>
+                                             <option value={6}>6</option>
+                                             <option value={7}>7</option>
+                                             <option value={8}>8</option>
+                                             <option value={9}>9</option>
+                                             <option value={10}>10</option>
+                                        </select>
+                                   </div>
+                              </div>
+                              <div class="grid md:grid-cols-3 grid-cols-2 md:gap-4 gap-2">
+                                   <div>
+                                        <select class="p-2 rounded-md border border-gray-300" name={"district"} onChange={handleValue}>
+                                             <option hidden>Living District</option>
+                                             <option value={"Bagerhat"}>Bagerhat</option>
+                                             <option value={"andarban"}>Bandarban</option>
+                                             <option value={"arguna"}>Barguna</option>
+                                             <option value={"arisal"}>Barisal</option>
+                                             <option value={"hola"}>Bhola</option>
+                                             <option value={"Bogra"}>Bogra</option>
+                                             <option value={"rahmanbaria"}>Brahmanbaria</option>
+                                             <option value={"Chandpur"}>Chandpur</option>
+                                             <option value={"Chapai"}>Chapai Nawabganj</option>
+                                             <option value={"Chattogram"}>Chattogram</option>
+                                             <option value={"Chuadanga"}>Chuadanga</option>
+                                             <option value={"Comilla"}>Comilla</option>
+                                             <option value={"Cox"}>Cox's Bazar</option>
+                                             <option value={"Dhaka"}>Dhaka</option>
+                                             <option value={"Dinajpur"}>Dinajpur</option>
+                                             <option value={"Faridpur"}>Faridpur</option>
+                                             <option value={"Feni"}>Feni</option>
+                                             <option value={"Gaibandha"}>Gaibandha</option>
+                                             <option value={"Gazipur"}>Gazipur</option>
+                                             <option value={"Gopalganj"}>Gopalganj</option>
+                                             <option value={"Habiganj"}>Habiganj</option>
+                                             <option value={"Jamalpur"}>Jamalpur</option>
+                                             <option value={"Jessore"}>Jessore</option>
+                                             <option value={"Jhenaidah"}>Jhenaidah</option>
+                                             <option value={"Joypurhat"}>Joypurhat</option>
+                                             <option value={"Khagrachhari"}>Khagrachhari</option>
+                                             <option value={"Khulna"}>Khulna</option>
+                                             <option value={"Kishoreganj"}>Kishoreganj</option>
+                                             <option value={"Kurigram"}>Kurigram</option>
+                                             <option value={"Kushtia"}>Kushtia</option>
+                                             <option value={"Lakshmipur"}>Lakshmipur</option>
+                                             <option value={"Lalmonirhat"}>Lalmonirhat</option>
+                                             <option value={"Madaripur"}>Madaripur</option>
+                                             <option value={"Magura"}>Magura</option>
+                                             <option value={"Manikganj"}>Manikganj</option>
+                                             <option value={"Meherpur"}>Meherpur</option>
+                                             <option value={"Moulvibazar"}>Moulvibazar</option>
+                                             <option value={"Munshiganj"}>Munshiganj</option>
+                                             <option value={"Mymensingh"}>Mymensingh</option>
+                                             <option value={"Naogaon"}>Naogaon</option>
+                                             <option value={"Narail"}>Narail</option>
+                                             <option value={"Narayanganj"}>Narayanganj</option>
+                                             <option value={"Narsingdi"}>Narsingdi</option>
+                                             <option value={"Natore"}>Natore</option>
+                                             <option value={"Netrokona"}>Netrokona</option>
+                                             <option value={"Nilphamari"}>Nilphamari</option>
+                                             <option value={"Noakhali"}>Noakhali</option>
+                                             <option value={"Pabna"}>Pabna</option>
+                                             <option value={"Panchagarh"}>Panchagarh</option>
+                                             <option value={"atuakhali"}>Patuakhali</option>
+                                             <option value={"irojpur"}>Pirojpur</option>
+                                             <option value={"Rajbari"}>Rajbari</option>
+                                             <option value={"Rajshahi"}>Rajshahi</option>
+                                             <option value={"Rangamati"}>Rangamati</option>
+                                             <option value={"Rangpur"}>Rangpur</option>
+                                             <option value={"Satkhira"}>Satkhira</option>
+                                             <option value={"Shariatpur"}>Shariatpur</option>
+                                             <option value={"Sherpur"}>Sherpur</option>
+                                             <option value={"Sirajganj"}>Sirajganj</option>
+                                             <option value={"Sunamganj"}>Sunamganj</option>
+                                             <option value={"Sylhet"}>Sylhet</option>
+                                             <option value={"Tangail"}>Tangail</option>
+                                             <option value={"Thakurgaon"}>Thakurgaon</option>
+                                        </select>
+                                   </div>
+                                   <div>
+                                        <select class="p-2 rounded-md border border-gray-300" name={"age"} onChange={handleValue}>
+                                             <option hidden>Your Age Range</option>
+                                             <option value={"12-15"}>12-15</option>
+                                             <option value={"16-18"}>16-18</option>
+                                             <option value={"19-21"}>19-21</option>
+                                             <option value={"22-25"}>22-25</option>
+                                             <option value={"26-28"}>26-28</option>
+                                             <option value={"29-32"}>29-32</option>
+                                             <option value={"33-36"}>33-36</option>
+                                             <option value={"37-45"}>37-45</option>
+                                        </select>
+                                   </div>
+                                   <div>
+                                        <select class="p-2 rounded-md border border-gray-300" name={"gender"} onChange={handleValue}>
+                                             <option hidden>Gender</option>
+                                             <option value={"male"}>Male</option>
+                                             <option value={"female"}>Female</option>
+                                        </select>
+                                   </div>
+                              </div>
+                         </div>
+                         <button class="btn">Submit</button>
+                    </form>
+               </div>
+          </section>
+          <section class="md:pb-20 pb-10 hidden">
+               <div class="container">
+                    <div class="flex justify-center items-center">
+                         <div class="md:w-3/4 w-full text-center">
+                              <h1 class="md:text-5xl text-2xl uppercase font-bold tracking-widest">website <span class="block md:text-4xl text-xl">under construction</span></h1>
+                              <div class="md:mt-6 md:mb-8 my-4 md:w-80 w-56 mx-auto"><img src="images/under/under-construction.png" alt=""></div>
+                              <p class="md:text-lg text-sm font-medium">Visit our <a class="text-blue-500" href="https://www.facebook.com/infiny.clothing">facebook</a> page<br />to stay connected with
+                                   iNFINY</p>
+                         </div>
+                    </div>
+               </div>
+          </section>
+          <section class="banner py-60 mb-32" style="background-image: url(./images/banner/banner.jpg);">
+          </section>
+          <section class="about pb-32">
+               <div class="container">
+                    <div class="flex justify-between items-center">
+                         <div class="section-title mr-20">
+                              <span>Know</span>
+                              <h2>INFINY</h2>
+                         </div>
+                         <div class="section-body text-base">
+                              <p class="mb-6">Assalamu Alaikum Warahmatullahi Wabarakatuh.</p>
+                              <p class="mb-4">iNFINY is a clothing brand. We start our journey from July 2022 from Chattogram. Our goal is to manufacture premium quality clothes and distribute them
+                                   all over Bangladesh. We have focused to serve the best quality at a <b>reasonable price</b> to our customers.</p>
+                              <p>And we ensure our delivery within <b>3 days</b>. We take our customer's reviews very seriously to maintain our product quality up to the mark always. Stay with us and
+                                   keep your support to iNFINY.</p>
+                         </div>
+                    </div>
+               </div>
+          </section>
+          <section class="latest pb-32">
+               <div class="container">
+                    <div class="flex items-center justify-between">
+                         <div class="section-title">
+                              <span>featured</span>
+                              <h2>latest design</h2>
+                         </div>
+                         <button class="btn btn-transparent">More...</button>
+                    </div>
+                    <div class="section-body">
+                         <div class="grid md:grid-cols-4 grid-cols-2 gap-4">
+                              <div class="item product-item">
+                                   <img class="scale-100 hover:scale-125 animated" src="images/item/item.jpeg" alt="">
+                                   <div class="overly bottom-top-overly">
+                                        <button class="btn btn-rose rounded-full text-xs">Quick View</button>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+          </section>
+          <section class="coming pb-32">
+               <div class="container">
+                    <div class="bg-stone-300 text-white p-5 rounded-md flex items-center">
+                         <div class="w-7/12 pl-16">
+                              <div class="section-title">
+                                   <span class="text-black">upcoming</span>
+                                   <h2>New Design</h2>
+                              </div>
+                              <div class="section-body">
+                                   <div class="p-5 inline-block bg-white shadow-xl rounded-lg mr-3">
+                                        <p class="text-rose-600 text-5xl font-semibold">30</p>
+                                        <p class="text-black text-lg font-medium text-center tracking-widest">DAYS</p>
+                                   </div>
+                                   <div class="p-5 inline-block bg-white shadow-xl rounded-lg mr-3">
+                                        <p class="text-rose-600 text-5xl font-semibold">05</p>
+                                        <p class="text-black text-lg font-medium text-center tracking-widest">HRS</p>
+                                   </div>
+                                   <div class="p-5 inline-block bg-white shadow-xl rounded-lg mr-3">
+                                        <p class="text-rose-600 text-5xl font-semibold">21</p>
+                                        <p class="text-black text-lg font-medium text-center tracking-widest">MINS</p>
+                                   </div>
+                                   <div class="p-5 inline-block bg-white shadow-xl rounded-lg mr-3">
+                                        <p class="text-rose-600 text-5xl font-semibold" 23>30</p>
+                                        <p class="text-black text-lg font-medium text-center tracking-widest">SECS</p>
+                                   </div>
+                                   <button class="btn btn-rose mt-8">Pre Order Now</button>
+                              </div>
+                         </div>
+                         <div class="w-5/12">
+                              <img src="images/item/t-shirt.png" alt="">
+                         </div>
+                    </div>
+               </div>
+          </section>
+          <section class="popular pb-32">
+               <div class="container">
+                    <div class="flex items-center justify-between">
+                         <div class="section-title">
+                              <span>featured</span>
+                              <h2>popular design</h2>
+                         </div>
+                         <button class="btn btn-transparent">More...</button>
+                    </div>
+                    <div class="section-body">
+                         <div class="grid md:grid-cols-4 grid-cols-2 gap-4">
+                              <div class="item product-item">
+                                   <img class="scale-100 hover:scale-125 animated" src="images/item/item.jpeg" alt="">
+                                   <div class="overly bottom-top-overly">
+                                        <button class="btn btn-rose rounded-full text-xs">Quick View</button>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+          </section>
+          <section class="team pb-32">
+               <div class="container">
+                    <div class="section-title">
+                         <span>know</span>
+                         <h2>Our Team</h2>
+                    </div>
+                    <div class="section-body">
+                         <div class="grid md:grid-cols-3 grid-cols-1 gap-8">
+                              <div class="item">
+                                   <div class="object-cover h-[25rem] overflow-hidden"><img src="images/team/IMG_4370.jpg" alt=""></div>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+          </section>
      </main>
 
-     <footer class="bg-zinc-100">
+     <footer class="relative bg-zinc-100 border-t-2 border-gray-300">
           <div class="md:pt-14 md:pb-20 py-10">
                <div class="container text-center">
                     <div class="mb-6 md:w-40 w-32 mx-auto"><a href=""><img src="images/logo/iNFINY-b.png" alt="logo"></a></div>
@@ -93,6 +344,9 @@
                          <li><a class="footer-social" href=""><img src="images/payment/rocket.png" alt=""></a></li>
                     </ul>
                </div>
+          </div>
+          <div id="scroll-top" class="absolute flex justify-center items-center font-semibold -top-8 left-1/2 -translate-x-1/2 h-14 w-14 bg-zinc-100 border border-gray-300 rounded-full">
+               <button>UP</button>
           </div>
      </footer>
      <!-- SCRIPT -->

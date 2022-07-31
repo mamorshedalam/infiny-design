@@ -10,6 +10,10 @@ const menuToggler = () => {
           menu.style.width = "100%";
      }
 }
+// SCROLL TOP
+document.getElementById("scroll-top").onclick = function(){
+     window.scrollTo({ top: 0, behavior: 'smooth' });
+}
 
 window.onscroll = function (e) {
      const topHeader = document.querySelector(".top-header");
