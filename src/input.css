@@ -45,14 +45,20 @@
   .btn-transparent {
     @apply text-rose-600 bg-transparent hover:text-white hover:bg-rose-600;
   }
-  .product-item{
-    @apply rounded relative overflow-hidden shadow-lg hover:-translate-y-3 transition-transform duration-500;
+  .product-item {
+    @apply rounded cursor-pointer relative overflow-hidden shadow-lg hover:-translate-y-3 transition-transform duration-500;
   }
   .item:hover .overly {
     @apply opacity-100 bottom-20;
   }
   .bottom-top-overly {
     @apply absolute opacity-0 bottom-0 left-1/2 -translate-x-1/2 transition-all duration-500;
+  }
+  .item:hover .img-div {
+    @apply border-t-2 border-l-2 border-r-2 border-rose-600;
+  }
+  .item:hover h2 {
+    @apply opacity-80;
   }
 }
 
