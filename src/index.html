@@ -22,10 +22,10 @@
      <header class="shadow-lg fixed z-50 w-full bg-white">
           <div class="container">
                <div class="flex flex-wrap items-center">
-                    <div class="top-header text-center md:w-full w-3/12">
-                         <a class="header-logo w-full md:w-44 pt-6 pb-4"><img src="images/logo/iNFINY-b.png" alt=""></a>
+                    <div class="top-header text-center lg:w-full w-3/12">
+                         <a class="header-logo w-full md:w-44 lg:pt-6 lg:pb-4 pt-3 pb-3"><img src="images/logo/iNFINY-b.png" alt=""></a>
                     </div>
-                    <div class="nav md:block hidden md:w-full w-9/12 justify-end">
+                    <div class="nav md:block hidden lg:w-full w-9/12 justify-end">
                          <ul class="flex justify-center">
                               <li><a href="" class="nav-item">home</a></li>
                               <li><a href="" class="nav-item">t-shirt</a></li>
@@ -50,8 +50,8 @@
           </div>
      </header>
 
-     <main class="lg:pt-40 pt-20">
-          <section class="review pb-32 hidden">
+     <main class="lg:pt-40 md:pt-20 pt-16">
+          <section class="review mb-32 hidden">
                <div class="container">
                     <div class="flex justify-center items-center">
                          <div class="w-80 px-4 py-8 rounded-xl border-2 border-rose-500 bg-white shadow-xl text-center">
@@ -63,7 +63,7 @@
                     </div>
                </div>
           </section>
-          <section class="review pb-32 hidden">
+          <section class="review mb-32 hidden">
                <div class="container">
                     <form action="">
                          <div class="grid md:grid-cols-2 grid-cols-1 gap-4">
@@ -192,18 +192,22 @@
                     </div>
                </div>
           </section>
-          <section class="banner py-60 mb-32" style="background-image: url(./images/banner/banner.jpg);">
-          </section>
-          <section class="about pb-32">
+          <section class="banner lg:py-40 md:py-20 py-12 section-margin" style="background-image: url(./images/banner/banner.jpg);">
                <div class="container">
-                    <div class="flex justify-between items-center">
-                         <div class="section-title mr-20">
+                    <h2 class="lg:text-7xl md:text-4xl text-2xl font-bold tracking-widest uppercase">new available</h2>
+                    <a href="https://m.me/102840469152704" class="btn btn-transparent rounded-full md:mt-5 mt-2">Order Now</a>
+               </div>
+          </section>
+          <section class="about section-margin">
+               <div class="container">
+                    <div class="lg:flex block justify-between items-center">
+                         <div class="section-title lg:mr-20">
                               <span>Know</span>
                               <h2>INFINY</h2>
                          </div>
-                         <div class="section-body text-base">
-                              <p class="mb-6">Assalamu Alaikum Warahmatullahi Wabarakatuh.</p>
-                              <p class="mb-4">iNFINY is a clothing brand. We start our journey from July 2022 from Chattogram. Our goal is to manufacture premium quality clothes and distribute them
+                         <div class="section-body lg:text-xl text-base">
+                              <p class="mb-4">Assalamu Alaikum Warahmatullahi Wabarakatuh.</p>
+                              <p class="mb-2">iNFINY is a clothing brand. We start our journey from July 2022 from Chattogram. Our goal is to manufacture premium quality clothes and distribute them
                                    all over Bangladesh. We have focused to serve the best quality at a <b>reasonable price</b> to our customers.</p>
                               <p>And we ensure our deliveries within <b>3 days</b>. We take our customer's reviews very seriously to maintain our product quality up to the mark always. Stay with us and
                                    keep your support to iNFINY.</p>
@@ -211,7 +215,7 @@
                     </div>
                </div>
           </section>
-          <section class="latest pb-32">
+          <section class="latest section-margin">
                <div class="container">
                     <div class="flex items-center justify-between">
                          <div class="section-title">
@@ -221,9 +225,27 @@
                          <button class="btn btn-transparent">More...</button>
                     </div>
                     <div class="section-body">
-                         <div class="grid md:grid-cols-4 grid-cols-2 gap-4">
+                         <div class="grid md:grid-cols-4 grid-cols-1 lg:gap-4 gap-2">
                               <div class="item product-item">
-                                   <img class="scale-100 hover:scale-125 animated" src="images/item/item.jpeg" alt="">
+                                   <img class="scale-100 hover:scale-125 animated" src="images/item/item (2).jpg" alt="">
+                                   <div class="overly bottom-top-overly">
+                                        <button class="btn btn-rose rounded-full text-xs">Quick View</button>
+                                   </div>
+                              </div>
+                              <div class="item product-item">
+                                   <img class="scale-100 hover:scale-125 animated" src="images/item/item (3).jpg" alt="">
+                                   <div class="overly bottom-top-overly">
+                                        <button class="btn btn-rose rounded-full text-xs">Quick View</button>
+                                   </div>
+                              </div>
+                              <div class="item product-item">
+                                   <img class="scale-100 hover:scale-125 animated" src="images/item/item (1).jpg" alt="">
+                                   <div class="overly bottom-top-overly">
+                                        <button class="btn btn-rose rounded-full text-xs">Quick View</button>
+                                   </div>
+                              </div>
+                              <div class="item product-item">
+                                   <img class="scale-100 hover:scale-125 animated" src="images/item/item (4).jpg" alt="">
                                    <div class="overly bottom-top-overly">
                                         <button class="btn btn-rose rounded-full text-xs">Quick View</button>
                                    </div>
@@ -232,41 +254,41 @@
                     </div>
                </div>
           </section>
-          <section class="coming pb-32">
+          <section class="coming section-margin">
                <div class="container">
-                    <div class="bg-stone-300 text-white p-5 rounded-md flex items-center">
-                         <div class="w-7/12 pl-16">
+                    <div class="bg-stone-300 text-white p-5 rounded-md flex items-center flex-wrap">
+                         <div class="lg:w-7/12 md:w-9/12 w-full lg:pl-16 md:pl-4">
                               <div class="section-title">
                                    <span class="text-black">upcoming</span>
                                    <h2>New Design</h2>
                               </div>
                               <div class="section-body">
-                                   <div class="p-5 inline-block bg-white shadow-xl rounded-lg mr-3">
-                                        <p class="text-rose-600 text-5xl font-semibold">30</p>
-                                        <p class="text-black text-lg font-medium text-center tracking-widest">DAYS</p>
+                                   <div class="md:p-5 p-3 inline-block bg-white shadow-xl text-center rounded-lg md:mr-3 mr-1">
+                                        <p class="text-rose-600 lg:text-5xl text-3xl font-semibold">30</p>
+                                        <p class="text-black lg:text-lg text-base font-medium text-center tracking-widest">DAYS</p>
                                    </div>
-                                   <div class="p-5 inline-block bg-white shadow-xl rounded-lg mr-3">
-                                        <p class="text-rose-600 text-5xl font-semibold">05</p>
-                                        <p class="text-black text-lg font-medium text-center tracking-widest">HRS</p>
+                                   <div class="md:p-5 p-3 inline-block bg-white shadow-xl text-center rounded-lg md:mr-3 mr-1">
+                                        <p class="text-rose-600 lg:text-5xl text-3xl font-semibold">05</p>
+                                        <p class="text-black lg:text-lg text-base font-medium text-center tracking-widest">HRS</p>
                                    </div>
-                                   <div class="p-5 inline-block bg-white shadow-xl rounded-lg mr-3">
-                                        <p class="text-rose-600 text-5xl font-semibold">21</p>
-                                        <p class="text-black text-lg font-medium text-center tracking-widest">MINS</p>
+                                   <div class="md:p-5 p-3 inline-block bg-white shadow-xl text-center rounded-lg md:mr-3 mr-1">
+                                        <p class="text-rose-600 lg:text-5xl text-3xl font-semibold">21</p>
+                                        <p class="text-black lg:text-lg text-base font-medium text-center tracking-widest">MINS</p>
                                    </div>
-                                   <div class="p-5 inline-block bg-white shadow-xl rounded-lg mr-3">
-                                        <p class="text-rose-600 text-5xl font-semibold" 23>30</p>
-                                        <p class="text-black text-lg font-medium text-center tracking-widest">SECS</p>
+                                   <div class="md:p-5 p-3 inline-block bg-white shadow-xl text-center rounded-lg md:mr-3 mr-1">
+                                        <p class="text-rose-600 lg:text-5xl text-3xl font-semibold" 23>30</p>
+                                        <p class="text-black lg:text-lg text-base font-medium text-center tracking-widest">SECS</p>
                                    </div>
-                                   <button class="btn btn-rose mt-8">Pre Order Now</button>
+                                   <a href="https://m.me/102840469152704" class="btn btn-rose md:mt-8 mt-4 md:mb-0 mb-4">Pre Order Now</a>
                               </div>
                          </div>
-                         <div class="w-5/12">
+                         <div class="lg:w-5/12 md:w-3/12 w-full md:px-0 px-20">
                               <img src="images/item/t-shirt.png" alt="">
                          </div>
                     </div>
                </div>
           </section>
-          <section class="popular pb-32">
+          <section class="popular section-margin">
                <div class="container">
                     <div class="flex items-center justify-between">
                          <div class="section-title">
@@ -276,9 +298,27 @@
                          <button class="btn btn-transparent">More...</button>
                     </div>
                     <div class="section-body">
-                         <div class="grid md:grid-cols-4 grid-cols-2 gap-4">
+                         <div class="grid md:grid-cols-4 grid-cols-1 lg:gap-4 gap-2">
                               <div class="item product-item">
-                                   <img class="scale-100 hover:scale-125 animated" src="images/item/item.jpeg" alt="">
+                                   <img class="scale-100 hover:scale-125 animated" src="images/item/item (2).jpg" alt="">
+                                   <div class="overly bottom-top-overly">
+                                        <button class="btn btn-rose rounded-full text-xs">Quick View</button>
+                                   </div>
+                              </div>
+                              <div class="item product-item">
+                                   <img class="scale-100 hover:scale-125 animated" src="images/item/item (3).jpg" alt="">
+                                   <div class="overly bottom-top-overly">
+                                        <button class="btn btn-rose rounded-full text-xs">Quick View</button>
+                                   </div>
+                              </div>
+                              <div class="item product-item">
+                                   <img class="scale-100 hover:scale-125 animated" src="images/item/item (1).jpg" alt="">
+                                   <div class="overly bottom-top-overly">
+                                        <button class="btn btn-rose rounded-full text-xs">Quick View</button>
+                                   </div>
+                              </div>
+                              <div class="item product-item">
+                                   <img class="scale-100 hover:scale-125 animated" src="images/item/item (4).jpg" alt="">
                                    <div class="overly bottom-top-overly">
                                         <button class="btn btn-rose rounded-full text-xs">Quick View</button>
                                    </div>
@@ -287,7 +327,7 @@
                     </div>
                </div>
           </section>
-          <section class="team pb-32">
+          <section class="team section-margin">
                <div class="container">
                     <div class="section-title">
                          <span>know</span>
@@ -296,16 +336,44 @@
                     <div class="section-body">
                          <div class="grid md:grid-cols-3 grid-cols-1 gap-8">
                               <div class="item product-item">
-                                   <div class="img-div object-cover h-80 overflow-hidden rounded-t-md animated"><img class="scale-100 hover:scale-110 animated" src="images/team/IMG_4370.jpg" alt=""></div>
+                                   <div class="img-div object-cover lg:h-80 h-60 overflow-hidden rounded-t-md animated"><img class="scale-100 hover:scale-110 rounded-t-md animated" src="images/team/ceo.jpg" alt=""></div>
                                    <div class="text-center bg-rose-600 rounded-b-md pt-5 pb-3">
-                                        <h2 class="text-lg font-semibold opacity-0 text-white animated">Morshed Alam</h2>
-                                        <h4 class="pt-1 text-xl font-bold text-white tracking-widest">CTO</h4>
+                                        <h2 class="text-lg font-semibold opacity-0 text-white animated">Abu Bakkar Siddik</h2>
+                                        <h4 class="pt-1 text-xl font-bold text-white tracking-widest uppercase">ceo</h4>
                                    </div>
                                    <div class="overly absolute w-full opacity-0">
                                         <ul class="flex justify-center items-center w-full">
-                                             <li class="bg-white rounded-md hover:-translate-y-3 mx-3 h-8 w-8 text-lg text-rose-600 flex justify-center items-center rotate-45 border-2 border-white hover:border-rose-600 animated"><a class="-rotate-45" href=""><i class="fa-brands fa-facebook-f"></i></a></li>
-                                             <li class="bg-white rounded-md hover:-translate-y-3 mx-3 h-8 w-8 text-lg text-rose-600 flex justify-center items-center rotate-45"><a class="-rotate-45" href=""><i class="fa-brands fa-instagram"></i></a></li>
-                                             <li class="bg-white rounded-md hover:-translate-y-3 mx-3 h-8 w-8 text-lg text-rose-600 flex justify-center items-center rotate-45"><a class="-rotate-45" href=""><i class="fa-brands fa-twitter"></i></a></li>
+                                             <li class="bg-white rounded-md hover:-translate-y-3 mx-3 h-8 w-8 text-lg text-rose-600 flex justify-center items-center rotate-45 border-2 border-white hover:border-rose-600 animated"><a class="-rotate-45" href="https://www.facebook.com/profile.php?id=100007894426526"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                             <li class="bg-white rounded-md hover:-translate-y-3 mx-3 h-8 w-8 text-lg text-rose-600 flex justify-center items-center rotate-45 border-2 border-white hover:border-rose-600 animated"><a class="-rotate-45" href="https://www.facebook.com/profile.php?id=100007894426526"><i class="fa-brands fa-instagram"></i></a></li>
+                                             <li class="bg-white rounded-md hover:-translate-y-3 mx-3 h-8 w-8 text-lg text-rose-600 flex justify-center items-center rotate-45 border-2 border-white hover:border-rose-600 animated"><a class="-rotate-45" href="https://www.facebook.com/profile.php?id=100007894426526"><i class="fa-brands fa-twitter"></i></a></li>
+                                        </ul>
+                                   </div>
+                              </div>
+                              <div class="item product-item">
+                                   <div class="img-div object-cover lg:h-80 h-60 overflow-hidden rounded-t-md animated"><img class="scale-100 hover:scale-110 rounded-t-md animated" src="images/team/cto.jpg" alt=""></div>
+                                   <div class="text-center bg-rose-600 rounded-b-md pt-5 pb-3">
+                                        <h2 class="text-lg font-semibold opacity-0 text-white animated">Morshed Alam</h2>
+                                        <h4 class="pt-1 text-xl font-bold text-white tracking-widest uppercase">CTO</h4>
+                                   </div>
+                                   <div class="overly absolute w-full opacity-0">
+                                        <ul class="flex justify-center items-center w-full">
+                                             <li class="bg-white rounded-md hover:-translate-y-3 mx-3 h-8 w-8 text-lg text-rose-600 flex justify-center items-center rotate-45 border-2 border-white hover:border-rose-600 animated"><a class="-rotate-45" href="https://www.facebook.com/ma.morshedalambd/"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                             <li class="bg-white rounded-md hover:-translate-y-3 mx-3 h-8 w-8 text-lg text-rose-600 flex justify-center items-center rotate-45 border-2 border-white hover:border-rose-600 animated"><a class="-rotate-45" href="https://www.instagram.com/mamorshedalam/"><i class="fa-brands fa-instagram"></i></a></li>
+                                             <li class="bg-white rounded-md hover:-translate-y-3 mx-3 h-8 w-8 text-lg text-rose-600 flex justify-center items-center rotate-45 border-2 border-white hover:border-rose-600 animated"><a class="-rotate-45" href="https://twitter.com/mamorshedalam2"><i class="fa-brands fa-twitter"></i></a></li>
+                                        </ul>
+                                   </div>
+                              </div>
+                              <div class="item product-item">
+                                   <div class="img-div object-cover lg:h-80 h-60 overflow-hidden rounded-t-md animated"><img class="scale-100 hover:scale-110 rounded-t-md animated" src="images/team/designer.jpg" alt=""></div>
+                                   <div class="text-center bg-rose-600 rounded-b-md pt-5 pb-3">
+                                        <h2 class="text-lg font-semibold opacity-0 text-white animated">Abdullah Al Sunny</h2>
+                                        <h4 class="pt-1 text-xl font-bold text-white tracking-widest uppercase">chief designer</h4>
+                                   </div>
+                                   <div class="overly absolute w-full opacity-0">
+                                        <ul class="flex justify-center items-center w-full">
+                                             <li class="bg-white rounded-md hover:-translate-y-3 mx-3 h-8 w-8 text-lg text-rose-600 flex justify-center items-center rotate-45 border-2 border-white hover:border-rose-600 animated"><a class="-rotate-45" href="https://www.facebook.com/abdullah.sunny00/"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                             <li class="bg-white rounded-md hover:-translate-y-3 mx-3 h-8 w-8 text-lg text-rose-600 flex justify-center items-center rotate-45 border-2 border-white hover:border-rose-600 animated"><a class="-rotate-45" href="https://www.facebook.com/abdullah.sunny00/"><i class="fa-brands fa-instagram"></i></a></li>
+                                             <li class="bg-white rounded-md hover:-translate-y-3 mx-3 h-8 w-8 text-lg text-rose-600 flex justify-center items-center rotate-45 border-2 border-white hover:border-rose-600 animated"><a class="-rotate-45" href="https://www.facebook.com/abdullah.sunny00/"><i class="fa-brands fa-twitter"></i></a></li>
                                         </ul>
                                    </div>
                               </div>
@@ -339,10 +407,9 @@
           <div class="flex flex-wrap items-center border-t border-gray-300 md:py-7 pt-4 pb-0">
                <div class="w-3/6 md:w-2/6 order-1">
                     <ul class="flex md:justify-start justify-center">
-                         <li><a class="footer-social" href=""><i class="fa-brands fa-facebook-f"></i></a></li>
-                         <li><a class="footer-social" href=""><i class="fa-brands fa-instagram"></i></a></li>
-                         <li><a class="footer-social" href=""><i class="fa-brands fa-twitter"></i></a></li>
-                         <li><a class="footer-social" href=""><i class="fa-brands fa-facebook-messenger"></i></a></li>
+                         <li><a class="footer-social" href="https://www.facebook.com/infiny.clothing"><i class="fa-brands fa-facebook-f"></i></a></li>
+                         <li><a class="footer-social" href="https://www.instagram.com/infiny.clothing/"><i class="fa-brands fa-instagram"></i></a></li>
+                         <li><a class="footer-social" href="https://m.me/102840469152704"><i class="fa-brands fa-facebook-messenger"></i></a></li>
                     </ul>
                </div>
                <div class="w-full md:w-2/6 text-center md:order-2 order-3">

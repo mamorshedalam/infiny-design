@@ -20,10 +20,10 @@ window.onscroll = function (e) {
      const nav = document.querySelector(".nav");
 
      if (window.scrollY > 100) {
-          topHeader.classList.remove("md:w-full");
-          nav.classList.remove("md:w-full");
+          topHeader.classList.remove("lg:w-full");
+          nav.classList.remove("lg:w-full");
      } else {
-          topHeader.classList.add("md:w-full");
-          nav.classList.add("md:w-full");
+          topHeader.classList.add("lg:w-full");
+          nav.classList.add("lg:w-full");
      }
 }
